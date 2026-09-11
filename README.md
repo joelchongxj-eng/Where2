@@ -125,19 +125,3 @@ This allows travellers to discover destinations through real travel experiences 
 Completed trips therefore continue to provide value even after the journey ends.
 
 ---
-
-### 🗺️ Interactive Destination Map
-
-The Where2 homepage includes an interactive world map that provides a visual starting point for the planning experience.
-
-Users can search for a destination through the homepage search bar, and the selected location will be marked on the map before they continue into the trip-planning process.
-
----
-
-## 3. Core Idea
-
-Where2 follows a simple principle:
-
-> **AI should assist travellers, not replace them.**
-
-Whether users already know exactly where they want to go or are starting with only a destination and a few preferences, Where2 adapts to how much planning they have already done and helps complete the rest.
