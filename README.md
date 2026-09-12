@@ -173,6 +173,7 @@ The Crazy Eight exercise was used to quickly generate and compare different feat
 
 #### 4. Low-Fidelity User Flow
 [View Low-Fidelity Prototype](travel-planner-low-fidelity-prototype.pdf)
+
 After selecting the main ideas, the team organised them into an end-to-end low-fidelity user flow covering **Explore → Plan → Collaborate → Prepare → Re-plan**. The flow shows how users move from destination discovery and AI trip creation to itinerary management, trip preparation and AI-assisted re-planning during the trip. The low-fidelity prototype also includes key flows such as destination discovery, editable itineraries, travel-group decisions, trip tools and ongoing-trip assistance. 
 
 ### 2.3 Mentor Consultation 
