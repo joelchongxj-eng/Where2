@@ -189,7 +189,27 @@ After selecting the main ideas, the team organised them into an end-to-end low-f
 
 ---
 ## 4.0 What Makes It Different 
----
+4. What Makes It Different
+Where2 proposes a travel-planning experience centred on individual privacy, group decisions, and preserving travellers’ priorities when plans change. Its originality lies in connecting these needs through specific workflows.
+Existing solutions already cover substantial parts of the travel journey. Wanderlog provides collaborative itineraries, budgeting, expense splitting, and preparation tools. Trip.com combines booking services with personalised AI planning and shared itinerary editing. Where2 therefore focuses on the following proposed improvements rather than claiming that these basic functions are new.
+
+1. Private personal budgets within a shared trip
+Each traveller can enter a daily or total budget, specify which spending categories it covers, and keep the exact amount hidden from companions. Where2 uses these inputs to inform planning suggestions while the group collaborates on one itinerary.
+The twist: travellers can communicate their financial constraints to the system without disclosing their exact budget to the group or maintaining a separate private trip.
+This addresses a documented Wanderlog limitation: its support account has discussed adding an option to hide the budget section and suggested View Only sharing as a workaround. View Only sharing serves a different purpose from collaboratively editing the same trip.
+
+2. Group decisions with visible trade-offs
+Where2’s Vote & Compare feature allows members to compare activities by travel time, estimated cost, and alignment with individual interests before voting. It also highlights members whose Must-go places remain unscheduled.
+The twist: collaboration includes a structured way to discuss compromises. For example, members can see that a museum costs less and suits two travellers’ interests, while a shopping stop requires less travel time. This is designed to make group decisions clearer and reduce repeated discussion.
+
+3. Must-go priorities carried into replanning
+Users can identify attractions as Must-go or Nice-to-have before generating their itinerary. Where2 plans around those priorities and existing bookings. If a priority attraction is missed, the app offers suggestions for fitting it into the remaining trip, with changes presented for review.
+The twist: the app remembers which experiences matter when helping travellers adjust. For example, a missed night market could be moved to the following evening, with another flexible activity rescheduled.
+
+4. Connected preparation and itinerary checks
+Where2’s Trip Readiness overview brings together document status, packing progress, weather concerns, and unscheduled priorities. Supporting features include missing-meal checks and weather-linked suggestions for items absent from the packing list.
+The twist: the proposed experience connects information to actions—for example, highlighting expected rain alongside a missing umbrella, or identifying a Must-go attraction that still needs a time slot.
+
 ## 5.0 Technical Architecture & Feasibility
 ---
 
