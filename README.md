@@ -260,3 +260,33 @@ flowchart TD
     Backend <--> Maps
     Backend <--> Weather
 ```
+
+How the system works
+Itinerary generation and replanning
+The app collects trip details, travel preferences, personal budget settings, existing bookings, and Must-go/Nice-to-have places. The backend retrieves relevant place information and requests an AI-generated itinerary.
+The backend checks the draft for overlapping activities, changes to fixed bookings, and missing priority places. Users review the proposed itinerary before saving it. When a traveller reports a disruption or skips a Must-go activity, the system proposes changes to the remaining schedule.
+If all requested activities cannot fit, Where2 highlights the conflict and asks the user to choose rather than silently removing a priority.
+Private budgets and shared planning
+Personal budgets will be stored separately from shared itinerary information. Database access rules will restrict each budget to its owner, while authorised backend planning logic can use the input to inform suggestions. Shared responses will exclude individual budget amounts.
+Supabase’s Row Level Security supports these access rules, but the team must implement and test them. Supabase access-control documentation
+Connected Trip Readiness dashboard
+The dashboard combines saved preparation status with simple checks:
+- Incomplete document requirements appear as outstanding tasks.
+- Packing progress is calculated from checked items.
+- Unscheduled Must-go places appear as itinerary concerns.
+- Forecast rain can trigger an umbrella suggestion if one is missing from the packing list.
+These checks use application rules rather than AI. This keeps their behaviour predictable and reduces AI usage costs.
+
+Build plan & scope
+During the building phase, we plan to deliver one complete working journey: create a trip, generate and edit an itinerary, coordinate with companions, review preparation, and reschedule a missed Must-go activity.
+To keep development realistic, the proposed demonstration scope is one supported city, trips of up to five days, and groups of up to four travellers. Solo travellers will use the same flow without group invitations or voting.
+
+| Stage | What we will build | Demonstrable outcome |
+|---|---|---|
+| **1. Foundation** | Sign-in, trip creation, invitations, and saved preferences. | Two users can access the same trip while keeping personal budget amounts private. |
+| **2. Itinerary planning** | The trip questionnaire, manually entered booking commitments, attraction selection, AI generation, and itinerary editing. | A user can generate, review, save, and modify a day-by-day plan. |
+| **3. Budget and group decisions** | Personal budget settings, manually entered costs, activity voting, and comparisons of estimated cost, time, and preference fit. | Members can compare alternatives and apply their selected option. |
+| **4. Connected preparation** | Document-status and packing checklists, a readiness overview, and weather-linked packing suggestions. | Completing preparation tasks updates the dashboard and clears relevant outstanding items. |
+| **5. During-trip support** | Complete/skip controls, missed-Must-go prompts, and replanning previews. | A user can accept a revised itinerary while preserving completed activities and fixed bookings. |
+| **6. Testing and delivery** | Android device testing, access-control checks, collaboration testing, and API failure handling. | The full journey works without exposing private budgets or losing saved plans when requests fail. |
+
