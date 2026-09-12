@@ -222,6 +222,7 @@ The twist: the proposed experience connects information to actions—for example
 
 ## 5.0 Technical Architecture & Feasibility
 1. Tech stack
+
 Where2 will be developed as a mobile application, with Figma used for UI design and prototyping. The proposed development stack is React Native with Expo for the frontend and Supabase for the backend and database.
 | Component | Proposed technology | Why we chose it | Expected constraints |
 |---|---|---|---|
