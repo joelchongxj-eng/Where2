@@ -210,6 +210,13 @@ The twist: the app remembers which experiences matter when helping travellers ad
 Where2’s Trip Readiness overview brings together document status, packing progress, weather concerns, and unscheduled priorities. Supporting features include missing-meal checks and weather-linked suggestions for items absent from the packing list.
 The twist: the proposed experience connects information to actions—for example, highlighting expected rain alongside a missing umbrella, or identifying a Must-go attraction that still needs a time slot.
 
+| Area | Wanderlog: confirmed capabilities | Trip.com: confirmed capabilities | Where2: proposed approach |
+|---|---|---|---|
+| **Budgeting** | Tracks expenses, splits costs, and provides category/day breakdowns and currency conversion. Budget-sharing limitations have been acknowledged by support. | Its published group-planning guide describes using budget inputs when planning a trip. | Private daily or total personal budget inputs within a collaborative trip. |
+| **Group planning** | Real-time collaborative itinerary editing. | TripGenie allows multiple users to create and edit itineraries together. | Shared planning with activity voting and explicit comparisons of preference fit, cost, and travel time. |
+| **Itinerary planning** | AI assistance and daily route optimisation, including reviewing and reverting changes. | Personalised itineraries based on destinations, trip length, preferences, and pace, with booking integration. | Must-go/Nice-to-have priorities, fixed booking commitments, and itinerary completeness checks. |
+| **During-trip support** | AI assistance and flight-status information. | Flight updates, hotel check-in alerts, and AI support for itinerary and booking questions. | A dedicated missed-Must-go flow that proposes adjustments to the remaining itinerary. |
+
 ## 5.0 Technical Architecture & Feasibility
 ---
 
