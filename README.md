@@ -233,3 +233,30 @@ Where2 will be developed as a mobile application, with Figma used for UI design 
 | **Hosting and distribution** | **Supabase Cloud + Expo EAS Build** | Supabase hosts the database and backend services. EAS produces installable mobile builds for testing and distribution. | Service quotas and build allowances apply. Public app-store distribution requires additional account setup and review. |
 
 Hosting approach: the interface runs on the traveller’s phone, while Supabase hosts the online services. External API secrets remain in Edge Functions, which act as the API proxy; a separate proxy server is unnecessary.
+
+System architecture diagram
+```mermaid
+flowchart TD
+    App["Where2 Mobile App<br/>React Native + Expo"]
+
+    Auth["Supabase Auth<br/>Sign-in and user identity"]
+
+    Data["Supabase Data API + Realtime<br/>Controlled access and shared updates"]
+
+    DB[("PostgreSQL Database<br/>Trips, members, itineraries,<br/>private budgets, votes and checklists")]
+
+    Backend["Supabase Edge Functions<br/>Permissions, planning logic,<br/>external API calls and validation"]
+
+    AI["Gemini API<br/>Itinerary and replanning suggestions"]
+    Maps["Google Places + Routes APIs<br/>Places, opening hours and travel times"]
+    Weather["Open-Meteo API<br/>Weather forecasts"]
+
+    App <--> Auth
+    App <--> Data
+    Data <--> DB
+    App <-->|Authenticated requests| Backend
+    Backend <--> DB
+    Backend <--> AI
+    Backend <--> Maps
+    Backend <--> Weather
+```
