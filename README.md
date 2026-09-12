@@ -8,6 +8,8 @@
 
 ### 🚩 1.1 Problem Statement
 
+## 🚩 Problem Statement
+
 Despite the large number of travel applications available today, travel planning remains a fragmented and time-consuming process. Travellers often need to coordinate destinations, activities, schedules, budgets, transportation, travel documents, and personal preferences across multiple platforms.
 
 The challenge becomes even greater for group travellers, where differences in schedules, budgets, interests, travel styles, and personal preferences require significant coordination and compromise before an itinerary can be finalized.
@@ -16,9 +18,11 @@ Furthermore, unexpected situations such as poor weather, transportation delays, 
 
 The main stakeholders are **solo travellers, groups of friends, and families** who need a simpler way to plan, organize, coordinate, and adapt their trips.
 
-Existing platforms such as Google Maps provide strong destination discovery and navigation capabilities, while AI travel planners can assist with itinerary generation. However, these functions often remain disconnected, requiring travellers to move between maps, itinerary tools, budgeting tools, travel documents, review platforms, and group chats throughout the planning process.
+Existing platforms such as **Trip.com** and **Wanderlog** already provide extensive travel planning capabilities. Trip.com offers integrated booking, itinerary planning, destination information, and AI-assisted travel features, while Wanderlog provides itinerary management, group collaboration, expense tracking, and trip organization tools.
 
-This creates a need for a unified travel platform that combines **AI-assisted itinerary planning, collaborative trip management, budgeting, travel preparation, social inspiration, and adaptive replanning** in one place.
+However, travellers may still face challenges when trying to reconcile different group members' preferences, budgets, schedules, and priorities into a single plan, especially when unexpected disruptions occur during the trip. This creates an opportunity for a platform that focuses more deeply on **group decision coordination and adaptive replanning**, while still bringing important planning information together in one place.
+
+Therefore, there is a need for a unified travel platform that combines **AI-assisted itinerary planning, collaborative trip management, budgeting, travel preparation, group preference coordination, and adaptive replanning** into a more connected travel-planning experience.
 
 ---
 
