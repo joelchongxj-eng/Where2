@@ -4,9 +4,9 @@
 
 ---
 
-## 1. Project Overview
+## 1.0 Project Overview
 
-### 🚩 Problem Statement
+### 🚩 1.1 Problem Statement
 
 Despite the large number of travel applications available today, travel planning remains a fragmented and time-consuming process. Travellers often need to coordinate destinations, activities, schedules, budgets, transportation, travel documents, and personal preferences across multiple platforms.
 
@@ -22,7 +22,7 @@ This creates a need for a unified travel platform that combines **AI-assisted it
 
 ---
 
-### 💡 Our Solution
+### 💡 1.2 Our Solution
 
 Where2 is an AI-assisted travel platform designed to bring the entire travel planning experience into one place.
 
@@ -125,3 +125,11 @@ This allows travellers to discover destinations through real travel experiences 
 Completed trips therefore continue to provide value even after the journey ends.
 
 ---
+
+## 2.0 Ideation Board
+
+### 2.1 Mind Map
+
+### 2.2 Flowchart
+
+### 2.3 Crazy Eights
