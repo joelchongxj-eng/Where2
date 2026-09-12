@@ -221,7 +221,7 @@ The twist: the proposed experience connects information to actions—for example
 ---
 
 ## 5.0 Technical Architecture & Feasibility
-Tech stack
+1. Tech stack
 Where2 will be developed as a mobile application, with Figma used for UI design and prototyping. The proposed development stack is React Native with Expo for the frontend and Supabase for the backend and database.
 | Component | Proposed technology | Why we chose it | Expected constraints |
 |---|---|---|---|
@@ -237,7 +237,7 @@ Where2 will be developed as a mobile application, with Figma used for UI design 
 
 Hosting approach: the interface runs on the traveller’s phone, while Supabase hosts the online services. External API secrets remain in Edge Functions, which act as the API proxy; a separate proxy server is unnecessary.
 
-System architecture diagram
+2. System architecture diagram
 ```mermaid
 flowchart TD
     App["Where2 Mobile App<br/>React Native + Expo"]
@@ -264,7 +264,7 @@ flowchart TD
     Backend <--> Weather
 ```
 
-How the system works
+3. How the system works
 Itinerary generation and replanning
 The app collects trip details, travel preferences, personal budget settings, existing bookings, and Must-go/Nice-to-have places. The backend retrieves relevant place information and requests an AI-generated itinerary.
 The backend checks the draft for overlapping activities, changes to fixed bookings, and missing priority places. Users review the proposed itinerary before saving it. When a traveller reports a disruption or skips a Must-go activity, the system proposes changes to the remaining schedule.
@@ -280,7 +280,7 @@ The dashboard combines saved preparation status with simple checks:
 - Forecast rain can trigger an umbrella suggestion if one is missing from the packing list.
 These checks use application rules rather than AI. This keeps their behaviour predictable and reduces AI usage costs.
 
-Build plan & scope
+4. Build plan & scope
 During the building phase, we plan to deliver one complete working journey: create a trip, generate and edit an itinerary, coordinate with companions, review preparation, and reschedule a missed Must-go activity.
 To keep development realistic, the proposed demonstration scope is one supported city, trips of up to five days, and groups of up to four travellers. Solo travellers will use the same flow without group invitations or voting.
 
