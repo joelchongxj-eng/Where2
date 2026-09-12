@@ -1,6 +1,10 @@
-# 🌍 Where2
-
+# 🌍 Where2 by Number 1
 **Where2** is an AI-assisted collaborative travel planning platform designed to make planning, managing, and adapting a trip simpler for both solo and group travellers.
+
+**Team**: JOEL CHONG XUE JIAN, LIM LI WEN, LAU ZI YEE
+**Problem Statement**: Travel Planner 
+**Video Presentation**: 
+**Presentation Slides**: 
 
 ---
 
@@ -128,14 +132,62 @@ Completed trips therefore continue to provide value even after the journey ends.
 
 ---
 
-## 2.0 Ideation Board
+## 2.0 Ideation & Process
 
-### 2.1 Mind Map
+### 2.1 Ideas We considered 
+The team explored several possible features for the travel-planning application. After discussion and mentor feedback, we prioritised ideas that directly support the main travel journey, while removing or simplifying features that increased complexity without adding enough value.
+
+| **Idea** | **Why it was dropped / kept** |
+|---|---|
+| **AI Trip Planning (Chosen)** | Kept because it reduces the time and effort required to manually organise destinations, routes and daily schedules. The AI can generate a complete itinerary based on the user's trip details and preferences. |
+| **Destination Discovery & AI Inspiration (Chosen)** | Kept to help users discover suitable destinations, especially when they are unsure where to go. Users can search destinations or ask AI for recommendations based on their travel interests and mood. |
+| **Personalised Travel Preferences (Chosen)** | Kept because different travellers have different interests, travel pace, budgets and special requirements. These preferences help the AI generate a more suitable itinerary. |
+| **Must-go & Nice-to-have Places (Chosen)** | Kept because users may already have specific places they want to visit. Must-go places are prioritised, while Nice-to-have places are included when time and travel distance allow. |
+| **Editable Itinerary (Chosen)** | Kept to maintain flexibility after the itinerary is generated. Users can add, delete, reorder and adjust activities based on their needs. |
+| **Collaborative Group Planning (Chosen)** | Kept because group travellers may have different preferences. The app allows members to compare preferences, vote between options and make travel decisions together. |
+| **Traveller Reviews & Shared Trip Plans (Chosen)** | Kept because users can gain inspiration from other travellers' experiences, discover places and view useful trip plans. |
+| **Trip Readiness Tools (Chosen)** | Kept to help users prepare before travelling by checking important areas such as travel documents, packing, weather and budget. |
+| **Emergency Assistance (Chosen)** | Kept because travellers may face unexpected situations during a trip. The app provides emergency contacts, nearby hospitals, embassy information and location-sharing options. |
+| **Ongoing Trip Mode (Chosen)** | Kept to support users during the actual trip by showing the current schedule, activity status and directions. |
+| **AI Re-planning (Chosen)** | Kept because travel plans may change due to delays, missed activities or unexpected situations. AI can rearrange the itinerary while protecting important Must-go places. |
+| **Manual Planning Mode (Dropped)** | Dropped because a separate manual-planning flow would make the planning process more complicated and create additional screens. Instead, users can directly tell the AI which places they must visit, and the AI will include them when generating the itinerary. |
+| **Social Media Sharing Template (Dropped)** | Dropped because the application already contains many core features. Adding an automatic social-media template generator would increase the scope and complexity of the project, while contributing less to the core travel-planning experience. |
+
+After evaluating the ideas, the team focused on features that support the full travel journey: discovering destinations, planning the trip, collaborating with others, preparing before departure and adapting the itinerary during the trip.
+
+### 2.2 Ideation Boards  
+#### 1. Mind Map
 <img width="1024" height="1280" alt="where2 problem mindmap" src="https://github.com/user-attachments/assets/dabeb7ca-b14c-4ff5-a836-7d9360722ee9" />
 This mind map shows the key travel planning problems identified during our team discussions.
 
-### 2.2 Flowchart
+#### 2. Flowchart
 <img width="1122" height="1402" alt="where2 flowchart" src="https://github.com/user-attachments/assets/b0871fa0-d4cd-43e6-9f5b-ae09be7a5a18" />
 This flowchart shows the trip planning process and solution flow designed for Where2.
 
-### 2.3 Crazy Eights
+#### 3. Crazy Eights
+<img width="1196" height="835" alt="image" src="https://github.com/user-attachments/assets/bd82879e-0656-4318-a6f5-014101034e50" />
+The Crazy Eight exercise was used to quickly generate and compare different feature concepts. The team explored possible solutions before deciding which ideas should be developed further and which should be removed or simplified.
+
+#### 4. Low-Fidelity User Flow
+
+After selecting the main ideas, the team organised them into an end-to-end low-fidelity user flow covering **Explore → Plan → Collaborate → Prepare → Re-plan**. The flow shows how users move from destination discovery and AI trip creation to itinerary management, trip preparation and AI-assisted re-planning during the trip. The low-fidelity prototype also includes key flows such as destination discovery, editable itineraries, travel-group decisions, trip tools and ongoing-trip assistance. 
+
+### 2.3 Mentor Consultation 
+| **Date** | **Mentor** | **Feedback Received** | **What Was Changed** |
+|---|---|---|---|
+| **4 Sep 2026** | **Iris Yan** | 1. The overall UI/UX design was considered satisfactory.<br><br>2. We were encouraged to add unique features that are not commonly available in existing travel applications. | 1. We added destination reviews to help users understand whether a destination is more popular among local residents or mainly visited by tourists.<br><br>2. This helps users choose places that better match their travel preferences. |
+| **10 Sep 2026** | **Teng Wei Herr** | 1. We initially prepared two project tracks, and the mentor recommended that we focus on Track 2.<br><br>2. For Track 2, we were encouraged to introduce more distinctive features. The mentor also suggested referring to Indie App for inspiration and research.<br><br>3. We were advised to prepare both a fixed prototype and a clickable demo, with Next.js suggested for developing the interactive version. | 1. We decided to focus fully on Track 2 and further develop the travel-planning application.<br><br>2. We added an Explore page to make the application more engaging. We also introduced an interactive Earth concept to improve the visual experience and make destination exploration more interesting.<br><br>3. We redesigned several application screens and started developing the clickable prototype using Next.js. |
+| **10 Sep 2026** | **Lim Zi Yang** | 1. The mentor responded positively to features such as the Emergency screen and Documentation screen.<br><br>2. For the documentation, we were advised to include a direct comparison with existing travel applications to demonstrate how our application provides additional or improved features.<br><br>3. We were encouraged to conduct further research on the technical implementation and suitable technology stack. Supabase was suggested as one possible technology for backend and database development. | 1. We added a comparison between our application and existing travel applications in the documentation to clearly highlight our unique features and advantages.<br><br>2. We conducted further research on the technology stack required to develop the application.<br><br>3. We started evaluating suitable technologies, including Supabase, for database management, backend services, authentication, and future implementation of the application. |
+| **12 Sep 2026** | **Daniel Koh Yu Hang** |  |  |
+
+---
+## 3.0 Design & Prototype
+### UI Prototype： 
+
+---
+## 4.0 What Makes It Different 
+---
+## 5.0 Technical Architecture & Feasibility
+---
+
+
