@@ -218,6 +218,8 @@ The twist: the proposed experience connects information to actions—for example
 | **Itinerary planning** | AI assistance and daily route optimisation, including reviewing and reverting changes. | Personalised itineraries based on destinations, trip length, preferences, and pace, with booking integration. | Must-go/Nice-to-have priorities, fixed booking commitments, and itinerary completeness checks. |
 | **During-trip support** | AI assistance and flight-status information. | Flight updates, hotel check-in alerts, and AI support for itinerary and booking questions. | A dedicated missed-Must-go flow that proposes adjustments to the remaining itinerary. |
 
+---
+
 ## 5.0 Technical Architecture & Feasibility
 Tech stack
 Where2 will be developed as a mobile application, with Figma used for UI design and prototyping. The proposed development stack is React Native with Expo for the frontend and Supabase for the backend and database.
