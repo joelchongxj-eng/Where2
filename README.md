@@ -129,7 +129,11 @@ Completed trips therefore continue to provide value even after the journey ends.
 ## 2.0 Ideation Board
 
 ### 2.1 Mind Map
+<img width="1024" height="1280" alt="where2 problem mindmap" src="https://github.com/user-attachments/assets/dabeb7ca-b14c-4ff5-a836-7d9360722ee9" />
+This mind map shows the key travel planning problems identified during our team discussions.
 
 ### 2.2 Flowchart
+<img width="1122" height="1402" alt="where2 flowchart" src="https://github.com/user-attachments/assets/b0871fa0-d4cd-43e6-9f5b-ae09be7a5a18" />
+This flowchart shows the trip planning process and solution flow designed for Where2.
 
 ### 2.3 Crazy Eights
