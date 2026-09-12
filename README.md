@@ -218,6 +218,18 @@ The twist: the proposed experience connects information to actions—for example
 | **During-trip support** | AI assistance and flight-status information. | Flight updates, hotel check-in alerts, and AI support for itinerary and booking questions. | A dedicated missed-Must-go flow that proposes adjustments to the remaining itinerary. |
 
 ## 5.0 Technical Architecture & Feasibility
----
+Tech stack
+Where2 will be developed as a mobile application, with Figma used for UI design and prototyping. The proposed development stack is React Native with Expo for the frontend and Supabase for the backend and database.
+| Component | Proposed technology | Why we chose it | Expected constraints |
+|---|---|---|---|
+| **UI/UX design** | **Figma** | Allows the team to design screens, maintain consistent components, and test navigation through clickable prototypes before implementation. | A Figma prototype does not implement the database, AI, or working application logic. These must be developed separately. |
+| **Mobile frontend** | **React Native + Expo + TypeScript** | Supports Android and iOS development through a shared codebase and can implement our questionnaire, itinerary, voting, and readiness screens. | Platform-specific testing is still required. We will prioritise Android for the building-phase demonstration. |
+| **Backend** | **Supabase Edge Functions** | Handles itinerary generation, replanning, external API requests, and validation without maintaining a separate server. TypeScript can be used across the frontend and backend. | Function execution limits and slow external requests may cause timeouts. We will limit request size and provide retry options. |
+| **Database** | **Supabase PostgreSQL** | Stores trips, members, preferences, activities, private budgets, votes, and preparation checklists in connected tables. | Database access policies must be configured carefully to separate shared trip information from private personal information. |
+| **Authentication and collaboration** | **Supabase Auth + Realtime** | Provides user sign-in and synchronises saved itinerary changes and votes between travellers. | Updates require connectivity. Version checks will prevent outdated edits from silently overwriting newer changes. |
+| **AI service** | **Gemini API** | Generates structured itinerary drafts and proposes changes based on preferences, priorities, and reported disruptions. | AI can produce inaccurate suggestions. Backend validation and user review are necessary before accepting a plan. |
+| **Places and travel information** | **Google Places API + Routes API** | Supplies recognised destinations, attraction information, available opening hours, and estimated travel times. | Billing, quotas, attribution requirements, and data-storage restrictions apply. Information may be incomplete or change. |
+| **Weather service** | **Open-Meteo API** | Provides forecasts for the weather page and weather-linked packing suggestions. | Forecasts are available only for a limited future period. Free-service usage restrictions must be considered. |
+| **Hosting and distribution** | **Supabase Cloud + Expo EAS Build** | Supabase hosts the database and backend services. EAS produces installable mobile builds for testing and distribution. | Service quotas and build allowances apply. Public app-store distribution requires additional account setup and review. |
 
-
+Hosting approach: the interface runs on the traveller’s phone, while Supabase hosts the online services. External API secrets remain in Edge Functions, which act as the API proxy; a separate proxy server is unnecessary.
