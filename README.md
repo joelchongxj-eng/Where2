@@ -36,9 +36,9 @@ Whether travelling solo or with others, Where2 aims to make every stage of the j
 
 ---
 
-## 2. Features
+### 1.3 Features
 
-### 🤖 Feature 1: AI-Assisted Travel Planner
+#### 🤖 Feature 1: AI-Assisted Travel Planner
 
 The AI-Assisted Travel Planner generates personalized itineraries based on:
 
@@ -63,7 +63,7 @@ All generated itineraries remain editable, allowing users and their travel compa
 
 The AI therefore acts as a **planning assistant rather than replacing the traveller's role in planning**.
 
-#### Trip Preparation Dashboards
+##### Trip Preparation Dashboards
 
 | Dashboard                 | Description                                                                                                                                                 |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ The AI therefore acts as a **planning assistant rather than replacing the travel
 
 ---
 
-### 👥 Feature 2: Collaborative Trip Management
+#### 👥 Feature 2: Collaborative Trip Management
 
 For group travel, users can invite their travel companions to access the same trip and collaboratively manage a shared itinerary.
 
@@ -91,7 +91,7 @@ This combines the efficiency of AI-assisted planning with the flexibility of col
 
 ---
 
-### 🔄 Feature 3: Adaptive AI Replanning
+#### 🔄 Feature 3: Adaptive AI Replanning
 
 Travel plans do not always go according to plan.
 
@@ -111,7 +111,7 @@ Where possible, unaffected activities are preserved so travellers do not need to
 
 ---
 
-### ✈️ Feature 4: Trip Sharing & Travel Inspiration
+#### ✈️ Feature 4: Trip Sharing & Travel Inspiration
 
 Users can share their completed trips and travel experiences with other users on the platform.
 
