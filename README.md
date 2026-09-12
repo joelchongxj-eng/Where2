@@ -8,8 +8,6 @@
 
 ### 🚩 1.1 Problem Statement
 
-## 🚩 Problem Statement
-
 Despite the large number of travel applications available today, travel planning remains a fragmented and time-consuming process. Travellers often need to coordinate destinations, activities, schedules, budgets, transportation, travel documents, and personal preferences across multiple platforms.
 
 The challenge becomes even greater for group travellers, where differences in schedules, budgets, interests, travel styles, and personal preferences require significant coordination and compromise before an itinerary can be finalized.
