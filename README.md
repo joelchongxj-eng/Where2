@@ -5,7 +5,7 @@
 
 **Problem Statement**: Travel Planner 
 
-**Video Presentation**: 
+**Video Presentation**: https://youtu.be/QVgJXqd9VCA?si=KUxJzMYsSgNGJLPW 
 
 **Presentation Slides**: [https://canva.link/1w5xxis5cv063uo](https://canva.link/1w5xxis5cv063uo)
 
@@ -84,17 +84,22 @@ The AI therefore acts as a **planning assistant rather than replacing the travel
 
 #### 👥 Feature 2: Collaborative Trip Management
 
-For group travel, users can invite their travel companions to access the same trip and collaboratively manage a shared itinerary.
+For group travel, users can invite their travel companions to join the same trip and collaboratively manage a shared itinerary in one place.
 
-Users can view and manage:
+Instead of simply allowing everyone to edit the same plan, Where2 is designed to support **group decision-making**. Each traveller can provide their own preferences, interests, travel style, pace, and budget considerations. The AI then takes these different inputs into account when generating or adjusting the itinerary, helping the group create a plan that better reflects everyone's needs.
 
-* Past trips
-* Upcoming trips
-* Ongoing trips
+Users can also vote on suggested destinations, activities, or proposed changes to the itinerary. This gives the group a structured way to make decisions together rather than relying entirely on long discussions in group chats.
 
-Instead of coordinating changes across multiple group chats, notes, or planning applications, everyone can work from a **single, up-to-date itinerary**.
+Group members can collaboratively:
 
-This combines the efficiency of AI-assisted planning with the flexibility of collaborative decision-making.
+* Add, remove, reorder, or replace activities
+* Vote on places to visit and proposed itinerary changes
+* Contribute their individual travel preferences
+* Review shared plans and upcoming activities
+* Manage past, upcoming, and ongoing trips
+* Keep one shared, up-to-date itinerary
+
+By combining collaborative editing, group voting, and AI-assisted preference matching, Where2 aims to make group trip planning more organized, balanced, and easier for everyone involved.
 
 ---
 
@@ -281,18 +286,18 @@ flowchart TD
 ```
 
 ### 3. How the System Architecture Works
-#### 1. Mobile app and authentication
+#### a. Mobile app and authentication
 The Where2 mobile app, built with React Native and Expo, is the interface travellers use to plan and manage their trips. It connects to Supabase Auth for sign-in. After authentication, the app uses the user’s session token when requesting protected data or backend operations.
 
-#### 2. Data access and shared updates
+#### b. Data access and shared updates
 The app connects to Supabase’s Data API to retrieve and save information in the PostgreSQL database. The database stores trips, members, itineraries, private budgets, votes, and checklists.
 Access rules determine which records each user can read or change. Trip members can access shared itinerary information, while personal budgets remain accessible only to their owners through the app. Realtime delivers authorised updates so saved itinerary changes and votes appear on other members’ devices.
 
-#### 3. Backend processing
+#### c. Backend processing
 For operations such as itinerary generation and replanning, the app sends an authenticated request to Supabase Edge Functions. These functions check the user’s identity and trip permissions, retrieve the necessary database records, and coordinate external services.
 The backend validates proposed plans before returning them to the app for review. Accepted changes are saved to the database.
 
-#### 4. External APIs and services
+#### d. External APIs and services
 The Edge Functions communicate with three external services:
 - Gemini API: Produces itinerary drafts and replanning suggestions.
 - Google Places and Routes APIs: Provide place details, available opening hours, and estimated travel times.
