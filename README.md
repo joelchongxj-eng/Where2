@@ -134,9 +134,9 @@ Shared trips can include:
 * Personal recommendations
 * Reviews and experiences
 
-This allows travellers to discover destinations through real travel experiences and use them as inspiration for their own future journeys.
+This allows travellers to discover destinations through real experiences from other users and use them as inspiration when planning their own future trips.
 
-Completed trips therefore continue to provide value even after the journey ends.
+By turning completed journeys into practical recommendations, this feature helps users spend less time searching for ideas and gives them a more relevant starting point when deciding where to go, what to do, and how to shape their own travel plans.
 
 ---
 
