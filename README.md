@@ -280,7 +280,7 @@ flowchart TD
     Backend <--> Weather
 ```
 
-### How the System Architecture Works
+### 3. How the System Architecture Works
 #### Mobile app and authentication
 The Where2 mobile app, built with React Native and Expo, is the interface travellers use to plan and manage their trips. It connects to Supabase Auth for sign-in. After authentication, the app uses the user’s session token when requesting protected data or backend operations.
 
