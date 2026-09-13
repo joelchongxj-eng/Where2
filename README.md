@@ -144,21 +144,21 @@ Completed trips therefore continue to provide value even after the journey ends.
 
 The Explore feature allows users to discover places they may want to visit before or during the trip-planning process. Users can search for specific destinations, attractions, restaurants, or activities and view useful information such as popular places, ratings, reviews, and other relevant details.
 
-For users who are unsure where to go, Where2 can also provide AI-powered recommendations based on their travel preferences, interests, budget, and travel style. This helps users discover places that are more relevant to them instead of relying only on generic popular destinations.
+For users who are unsure where to go, Where2 can also provide **AI-powered recommendations** based on their travel preferences, interests, budget, and travel style. This helps users discover places that are more relevant to them instead of relying only on generic popular destinations.
 
 Users can also save places that interest them and return to them later when planning a trip. Saved places can then be added into an itinerary or considered by the AI when generating future travel plans.
 
 Key functions include:
 
-Search for destinations, attractions, restaurants, and activities
-Discover popular and highly rated places
-View ratings, reviews, and place information
-Receive AI-powered recommendations based on personal preferences
-Save places for later
-Add saved places into future trip plans
-Use saved places as input for AI-assisted itinerary generation
+* Search for destinations, attractions, restaurants, and activities
+* Discover popular and highly rated places
+* View ratings, reviews, and place information
+* Receive AI-powered recommendations based on personal preferences
+* Save places for later
+* Add saved places into future trip plans
+* Use saved places as input for AI-assisted itinerary generation
 
-This feature helps connect travel inspiration with actual trip planning, allowing users to move naturally from discovering a place to saving it and eventually including it in their itinerary.
+This feature helps connect **travel inspiration with actual trip planning**, allowing users to move naturally from discovering a place to saving it and eventually including it in their itinerary.
 
 --- 
 
