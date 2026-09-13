@@ -247,6 +247,7 @@ Where2 will be developed as a mobile application, with Figma used for UI design 
 
 Hosting approach: the interface runs on the traveller’s phone, while Supabase hosts the online services. External API secrets remain in Edge Functions, which act as the API proxy; a separate proxy server is unnecessary.
 
+
 2. System architecture diagram
 ```mermaid
 flowchart TD
@@ -289,6 +290,7 @@ The dashboard combines saved preparation status with simple checks:
 - Unscheduled Must-go places appear as itinerary concerns.
 - Forecast rain can trigger an umbrella suggestion if one is missing from the packing list.
 These checks use application rules rather than AI. This keeps their behaviour predictable and reduces AI usage costs.
+
 
 4. Build plan & scope
 During the building phase, we plan to deliver one complete working journey: create a trip, generate and edit an itinerary, coordinate with companions, review preparation, and reschedule a missed Must-go activity.
