@@ -231,10 +231,9 @@ https://www.figma.com/design/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fideli
 
 ---
 ## 4.0 What Makes It Different 
-### 1. What Makes It Different
-
 Where2 proposes a travel-planning experience centred on individual privacy, group decisions, and preserving travellers’ priorities when plans change. Its originality lies in connecting these needs through specific workflows.
 Existing solutions already cover substantial parts of the travel journey. Wanderlog provides collaborative itineraries, budgeting, expense splitting, and preparation tools. Trip.com combines booking services with personalised AI planning and shared itinerary editing. Where2 therefore focuses on the following proposed improvements rather than claiming that these basic functions are new.
+
 
 ### 2. Private personal budgets within a shared trip
 
