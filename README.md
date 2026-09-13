@@ -212,7 +212,7 @@ After selecting the main ideas, the team organised them into an end-to-end low-f
 
 
 ---
-## 3.0 Design & Prototype: 
+## 3.0 Design & Prototype
 ### Clickable UI Prototype： 
 
 https://www.figma.com/proto/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=109-3&t=DqOGiOjj4esQVtOe-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A46
