@@ -282,14 +282,14 @@ flowchart TD
 
 ## 3. How the system works
 
-### 1. Itinerary generation and replanning
+### Itinerary generation and replanning
 
 The app collects trip details, travel preferences, personal budget settings, existing bookings, and Must-go/Nice-to-have places. The backend retrieves relevant place information and requests an AI-generated itinerary.
 
 The backend checks the draft for overlapping activities, changes to fixed bookings, and missing priority places. Users review the proposed itinerary before saving it. When a traveller reports a disruption or skips a Must-go activity, the system proposes changes to the remaining schedule.
 If all requested activities cannot fit, Where2 highlights the conflict and asks the user to choose rather than silently removing a priority.
 
-#### 2. Private budgets and shared planning
+#### Private budgets and shared planning
 Personal budgets will be stored separately from shared itinerary information. Database access rules will restrict each budget to its owner, while authorised backend planning logic can use the input to inform suggestions. Shared responses will exclude individual budget amounts.
 
 Supabase’s Row Level Security supports these access rules, but the team must implement and test them. Supabase access-control documentation
