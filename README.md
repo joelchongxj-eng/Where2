@@ -281,18 +281,18 @@ flowchart TD
 ```
 
 ### 3. How the System Architecture Works
-#### Mobile app and authentication
+#### 1. Mobile app and authentication
 The Where2 mobile app, built with React Native and Expo, is the interface travellers use to plan and manage their trips. It connects to Supabase Auth for sign-in. After authentication, the app uses the user’s session token when requesting protected data or backend operations.
 
-#### Data access and shared updates
+#### 2. Data access and shared updates
 The app connects to Supabase’s Data API to retrieve and save information in the PostgreSQL database. The database stores trips, members, itineraries, private budgets, votes, and checklists.
 Access rules determine which records each user can read or change. Trip members can access shared itinerary information, while personal budgets remain accessible only to their owners through the app. Realtime delivers authorised updates so saved itinerary changes and votes appear on other members’ devices.
 
-#### Backend processing
+#### 3. Backend processing
 For operations such as itinerary generation and replanning, the app sends an authenticated request to Supabase Edge Functions. These functions check the user’s identity and trip permissions, retrieve the necessary database records, and coordinate external services.
 The backend validates proposed plans before returning them to the app for review. Accepted changes are saved to the database.
 
-#### External APIs and services
+#### 4. External APIs and services
 The Edge Functions communicate with three external services:
 - Gemini API: Produces itinerary drafts and replanning suggestions.
 - Google Places and Routes APIs: Provide place details, available opening hours, and estimated travel times.
