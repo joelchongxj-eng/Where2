@@ -280,27 +280,24 @@ flowchart TD
     Backend <--> Weather
 ```
 
-### 3. How the system works
+### How the System Architecture Works
+#### Mobile app and authentication
+The Where2 mobile app, built with React Native and Expo, is the interface travellers use to plan and manage their trips. It connects to Supabase Auth for sign-in. After authentication, the app uses the user’s session token when requesting protected data or backend operations.
 
-#### Itinerary generation and replanning
+#### Data access and shared updates
+The app connects to Supabase’s Data API to retrieve and save information in the PostgreSQL database. The database stores trips, members, itineraries, private budgets, votes, and checklists.
+Access rules determine which records each user can read or change. Trip members can access shared itinerary information, while personal budgets remain accessible only to their owners through the app. Realtime delivers authorised updates so saved itinerary changes and votes appear on other members’ devices.
 
-The app collects trip details, travel preferences, personal budget settings, existing bookings, and Must-go/Nice-to-have places. The backend retrieves relevant place information and requests an AI-generated itinerary.
+#### Backend processing
+For operations such as itinerary generation and replanning, the app sends an authenticated request to Supabase Edge Functions. These functions check the user’s identity and trip permissions, retrieve the necessary database records, and coordinate external services.
+The backend validates proposed plans before returning them to the app for review. Accepted changes are saved to the database.
 
-The backend checks the draft for overlapping activities, changes to fixed bookings, and missing priority places. Users review the proposed itinerary before saving it. When a traveller reports a disruption or skips a Must-go activity, the system proposes changes to the remaining schedule.
-If all requested activities cannot fit, Where2 highlights the conflict and asks the user to choose rather than silently removing a priority.
-
-#### Private budgets and shared planning
-Personal budgets will be stored separately from shared itinerary information. Database access rules will restrict each budget to its owner, while authorised backend planning logic can use the input to inform suggestions. Shared responses will exclude individual budget amounts.
-
-Supabase’s Row Level Security supports these access rules, but the team must implement and test them. Supabase access-control documentation
-Connected Trip Readiness dashboard
-
-The dashboard combines saved preparation status with simple checks:
-- Incomplete document requirements appear as outstanding tasks.
-- Packing progress is calculated from checked items.
-- Unscheduled Must-go places appear as itinerary concerns.
-- Forecast rain can trigger an umbrella suggestion if one is missing from the packing list.
-These checks use application rules rather than AI. This keeps their behaviour predictable and reduces AI usage costs.
+#### External APIs and services
+The Edge Functions communicate with three external services:
+- Gemini API: Produces itinerary drafts and replanning suggestions.
+- Google Places and Routes APIs: Provide place details, available opening hours, and estimated travel times.
+- Open-Meteo API: Supplies weather forecasts for trip information and packing suggestions.
+These requests pass through the backend so external API secrets are not embedded in the mobile app.
 
 
 ### 4. Build plan & scope
