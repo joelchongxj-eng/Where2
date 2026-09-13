@@ -7,7 +7,7 @@
 
 **Video Presentation**: 
 
-**Presentation Slides**: https://canva.link/1w5xxis5cv063uo
+**Presentation Slides**: [https://canva.link/1w5xxis5cv063uo](https://canva.link/1w5xxis5cv063uo)
 
 ---
 
@@ -280,9 +280,9 @@ flowchart TD
     Backend <--> Weather
 ```
 
-### 3. How the system works
+## 3. How the system works
 
-#### 1. Itinerary generation and replanning
+### 1. Itinerary generation and replanning
 
 The app collects trip details, travel preferences, personal budget settings, existing bookings, and Must-go/Nice-to-have places. The backend retrieves relevant place information and requests an AI-generated itinerary.
 
