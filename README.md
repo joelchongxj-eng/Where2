@@ -7,7 +7,7 @@
 
 **Video Presentation**: 
 
-**Presentation Slides**: 
+**Presentation Slides**: https://canva.link/1w5xxis5cv063uo
 
 ---
 
@@ -182,11 +182,20 @@ After selecting the main ideas, the team organised them into an end-to-end low-f
 | **4 Sep 2026** | **Iris Yan** | 1. The overall UI/UX design was considered satisfactory.<br><br>2. We were encouraged to add unique features that are not commonly available in existing travel applications. | 1. We added destination reviews to help users understand whether a destination is more popular among local residents or mainly visited by tourists.<br><br>2. This helps users choose places that better match their travel preferences. |
 | **10 Sep 2026** | **Teng Wei Herr** | 1. We initially prepared two project tracks, and the mentor recommended that we focus on Track 2.<br><br>2. For Track 2, we were encouraged to introduce more distinctive features. The mentor also suggested referring to Indie App for inspiration and research.<br><br>3. We were advised to prepare both a fixed prototype and a clickable demo, with Next.js suggested for developing the interactive version. | 1. We decided to focus fully on Track 2 and further develop the travel-planning application.<br><br>2. We added an Explore page to make the application more engaging. We also introduced an interactive Earth concept to improve the visual experience and make destination exploration more interesting.<br><br>3. We redesigned several application screens and started developing the clickable prototype using Next.js. |
 | **10 Sep 2026** | **Lim Zi Yang** | 1. The mentor responded positively to features such as the Emergency screen and Documentation screen.<br><br>2. For the documentation, we were advised to include a direct comparison with existing travel applications to demonstrate how our application provides additional or improved features.<br><br>3. We were encouraged to conduct further research on the technical implementation and suitable technology stack. Supabase was suggested as one possible technology for backend and database development. | 1. We added a comparison between our application and existing travel applications in the documentation to clearly highlight our unique features and advantages.<br><br>2. We conducted further research on the technology stack required to develop the application.<br><br>3. We started evaluating suitable technologies, including Supabase, for database management, backend services, authentication, and future implementation of the application. |
-| **12 Sep 2026** | **Daniel Koh Yu Hang** |  |  |
+
 
 ---
-## 3.0 Design & Prototype
-### UI Prototype： 
+## 3.0 Design & Prototype: 
+### Clickable UI Prototype： https://www.figma.com/proto/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=109-3&t=DqOGiOjj4esQVtOe-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A46
+### Full UI Screens： https://www.figma.com/design/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=0-1&t=louuAFjJCyWyizkr-1
+### Key Screens: 
+<img width="1900" height="762" alt="image" src="https://github.com/user-attachments/assets/17b202a9-3672-4167-a064-c6b987781e4d" />
+<img width="1859" height="776" alt="image" src="https://github.com/user-attachments/assets/7886ecef-9d9d-416c-bfb2-fc61a6c62cd9" />
+<img width="1873" height="785" alt="image" src="https://github.com/user-attachments/assets/1b4647e9-8b68-4e31-9464-759b67316934" />
+<img width="1866" height="778" alt="image" src="https://github.com/user-attachments/assets/c874b63a-7a46-4e20-970d-68bf6e1e4339" />
+<img width="1864" height="766" alt="image" src="https://github.com/user-attachments/assets/9815a148-33d4-4e43-8d1f-a93f7aa799a6" />
+
+### 
 
 ---
 ## 4.0 What Makes It Different 
