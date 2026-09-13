@@ -140,6 +140,28 @@ Completed trips therefore continue to provide value even after the journey ends.
 
 ---
 
+#### 🔎 Feature 5: Explore
+
+The Explore feature allows users to discover places they may want to visit before or during the trip-planning process. Users can search for specific destinations, attractions, restaurants, or activities and view useful information such as popular places, ratings, reviews, and other relevant details.
+
+For users who are unsure where to go, Where2 can also provide AI-powered recommendations based on their travel preferences, interests, budget, and travel style. This helps users discover places that are more relevant to them instead of relying only on generic popular destinations.
+
+Users can also save places that interest them and return to them later when planning a trip. Saved places can then be added into an itinerary or considered by the AI when generating future travel plans.
+
+Key functions include:
+
+Search for destinations, attractions, restaurants, and activities
+Discover popular and highly rated places
+View ratings, reviews, and place information
+Receive AI-powered recommendations based on personal preferences
+Save places for later
+Add saved places into future trip plans
+Use saved places as input for AI-assisted itinerary generation
+
+This feature helps connect travel inspiration with actual trip planning, allowing users to move naturally from discovering a place to saving it and eventually including it in their itinerary.
+
+--- 
+
 ## 2.0 Ideation & Process
 
 ### 2.1 Ideas We considered 
@@ -191,8 +213,13 @@ After selecting the main ideas, the team organised them into an end-to-end low-f
 
 ---
 ## 3.0 Design & Prototype: 
-### Clickable UI Prototype： https://www.figma.com/proto/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=109-3&t=DqOGiOjj4esQVtOe-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A46
-### Full UI Screens： https://www.figma.com/design/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=0-1&t=louuAFjJCyWyizkr-1
+### Clickable UI Prototype： 
+
+https://www.figma.com/proto/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=109-3&t=DqOGiOjj4esQVtOe-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A46
+### Full UI Screens： 
+
+https://www.figma.com/design/zjT2y60LwSmcQCQWGzsMUY/Where2-%E2%80%94-High-Fidelity-UI?node-id=0-1&t=louuAFjJCyWyizkr-1
+
 ### Key Screens: 
 <img width="1900" height="762" alt="image" src="https://github.com/user-attachments/assets/17b202a9-3672-4167-a064-c6b987781e4d" />
 <img width="1859" height="776" alt="image" src="https://github.com/user-attachments/assets/7886ecef-9d9d-416c-bfb2-fc61a6c62cd9" />
